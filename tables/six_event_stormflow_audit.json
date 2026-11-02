@@ -1,0 +1,786 @@
+{
+  "checks": {
+    "simulations_run": 0,
+    "events_used": [
+      "IETD12_E0010",
+      "IETD12_E0015",
+      "IETD12_E0136",
+      "IETD12_E0140",
+      "IETD12_E0177",
+      "IETD12_E0400"
+    ],
+    "validation_events_used": false,
+    "source_files_unchanged": true,
+    "original_UTC_preparation_unchanged": true,
+    "source_sha256": {
+      "D:\\project_02_satellite-rainfall-runoff\\data\\interim\\precipitation\\IMERG_V07_USGS_02361000_2018_2024_combined_interim.csv": "6afe81ec8d92ea1b88dc7b8dbfb0ab2270de153ce248a591c20e6d0b64c8b82f",
+      "D:\\project_02_satellite-rainfall-runoff\\data\\interim\\discharge\\USGS_02361000_00060_continuous_combined_interim.csv": "c770576ac477910f641780cafe8623785673d7685d6c67ec4297c4d085e3fbab",
+      "D:\\project_02_satellite-rainfall-runoff\\results\\event_catalog\\IMERG_USGS_IETD12_linked_events.csv": "bafadb2c6d410986199250224d49f25722cf7046035e3649a2c706dd45eedc79"
+    },
+    "frozen_search_records_unchanged": true,
+    "previous_two_event_results_reproduced": true
+  },
+  "results": [
+    {
+      "event": "IETD12_E0010",
+      "window_start_utc": "2018-02-09 15:00:00+00:00",
+      "window_end_utc": "2018-02-15 10:00:00+00:00",
+      "rain_onset_utc": "2018-02-10 15:00:00+00:00",
+      "rain_window_mm": 157.35922545423966,
+      "observed_total_mm": 36.61006163171132,
+      "constant_background_m3_s": 26.197802572032,
+      "selected_recession": {
+        "event": "IETD12_E0010",
+        "start_utc": "2018-02-09 18:30:00+00:00",
+        "end_utc": "2018-02-10 09:00:00+00:00",
+        "duration_hours": 14.5,
+        "hours_before_event": 6.0,
+        "rain_mm": 0.0,
+        "daily_k": 0.841573174907709,
+        "log_flow_R2": 0.9197087567381856,
+        "rising_step_fraction": 0.034482758620689655,
+        "eligible": true,
+        "slope_per_day": -0.17248231142812426,
+        "anchor_flow_m3_s": 26.504568410112
+      },
+      "scs_CN75_Ia02S_excess_mm": 87.6087394393018,
+      "scs_CN75_Ia0_excess_mm": 102.31106109584412,
+      "antecedent_7day_mm": 36.81453432366539,
+      "methods": {
+        "constant_pre_event": {
+          "stormflow_mm": 29.29069058134105,
+          "effective_background_mm": 7.319371050370268,
+          "signed_residual_mm": 29.24209530505229,
+          "clipping_correction_mm": 0.04859527628876137,
+          "native_15min_stormflow_mm": 29.293755836536306,
+          "native_minus_30min_mm": 0.0030652551952563556,
+          "stormflow_fraction_of_window_rain": 0.1861390108955438
+        },
+        "observed_recession": {
+          "stormflow_mm": 31.258587446679023,
+          "effective_background_mm": 5.351474185032289,
+          "signed_residual_mm": 31.245011433556957,
+          "clipping_correction_mm": 0.013576013122065689,
+          "native_15min_stormflow_mm": 31.260723934522076,
+          "native_minus_30min_mm": 0.002136487843053203,
+          "stormflow_fraction_of_window_rain": 0.1986447718997516
+        }
+      },
+      "all_baseline_sensitivity_min_mm": 28.358767060246734,
+      "all_baseline_sensitivity_max_mm": 32.658969819391,
+      "antecedent_rain_by_24h_age_mm": {
+        "0-24h_before_onset": 3.0075558451523365,
+        "24-48h_before_onset": 2.691804455726027,
+        "48-72h_before_onset": 24.488834496000344,
+        "72-96h_before_onset": 1.1110111627337593,
+        "96-120h_before_onset": 0.0,
+        "120-144h_before_onset": 0.2237872723648401,
+        "144-168h_before_onset": 5.291541091688082
+      }
+    },
+    {
+      "event": "IETD12_E0015",
+      "window_start_utc": "2018-03-05 05:30:00+00:00",
+      "window_end_utc": "2018-03-09 19:30:00+00:00",
+      "rain_onset_utc": "2018-03-06 05:30:00+00:00",
+      "rain_window_mm": 40.514471351989066,
+      "observed_total_mm": 6.218973082515778,
+      "constant_background_m3_s": 18.328078956672,
+      "selected_recession": {
+        "event": "IETD12_E0015",
+        "start_utc": "2018-03-05 15:30:00+00:00",
+        "end_utc": "2018-03-06 04:00:00+00:00",
+        "duration_hours": 12.5,
+        "hours_before_event": 1.5,
+        "rain_mm": 0.0,
+        "daily_k": 0.9307844170164541,
+        "log_flow_R2": 0.8899968805944781,
+        "rising_step_fraction": 0.12,
+        "eligible": true,
+        "slope_per_day": -0.07172758918914066,
+        "anchor_flow_m3_s": 18.179415512064
+      },
+      "scs_CN75_Ia02S_excess_mm": 5.1383043091605565,
+      "scs_CN75_Ia0_excess_mm": 13.112377910212969,
+      "antecedent_7day_mm": 2.851357116635615,
+      "methods": {
+        "constant_pre_event": {
+          "stormflow_mm": 2.148063519814781,
+          "effective_background_mm": 4.070909562700999,
+          "signed_residual_mm": 2.1397486570070705,
+          "clipping_correction_mm": 0.008314862807710544,
+          "native_15min_stormflow_mm": 2.1473079487327715,
+          "native_minus_30min_mm": -0.0007555710820095207,
+          "stormflow_fraction_of_window_rain": 0.05301966058380573
+        },
+        "observed_recession": {
+          "stormflow_mm": 2.5333948321228577,
+          "effective_background_mm": 3.68557825039292,
+          "signed_residual_mm": 2.5308015326248796,
+          "clipping_correction_mm": 0.002593299497978041,
+          "native_15min_stormflow_mm": 2.533109690641939,
+          "native_minus_30min_mm": -0.00028514148091884906,
+          "stormflow_fraction_of_window_rain": 0.06253061554506696
+        }
+      },
+      "all_baseline_sensitivity_min_mm": 1.9649431691426507,
+      "all_baseline_sensitivity_max_mm": 2.831670590563038,
+      "antecedent_rain_by_24h_age_mm": {
+        "0-24h_before_onset": 0.7594431368640607,
+        "24-48h_before_onset": 0.0834820586467597,
+        "48-72h_before_onset": 0.0,
+        "72-96h_before_onset": 0.0,
+        "96-120h_before_onset": 1.278611344711912,
+        "120-144h_before_onset": 0.6822145657465446,
+        "144-168h_before_onset": 0.0476060106663356
+      }
+    },
+    {
+      "event": "IETD12_E0136",
+      "window_start_utc": "2018-12-18 22:00:00+00:00",
+      "window_end_utc": "2018-12-24 14:30:00+00:00",
+      "rain_onset_utc": "2018-12-19 22:00:00+00:00",
+      "rain_window_mm": 38.241910771750405,
+      "observed_total_mm": 14.137272080244527,
+      "constant_background_m3_s": 32.44638672,
+      "selected_recession": {
+        "event": "IETD12_E0136",
+        "start_utc": "2018-12-19 11:30:00+00:00",
+        "end_utc": "2018-12-19 19:30:00+00:00",
+        "duration_hours": 8.0,
+        "hours_before_event": 2.5,
+        "rain_mm": 0.0,
+        "daily_k": 0.8868651556813774,
+        "log_flow_R2": 0.9583939475219222,
+        "rising_step_fraction": 0.0,
+        "eligible": true,
+        "slope_per_day": -0.1200623311363391,
+        "anchor_flow_m3_s": 32.28120511488
+      },
+      "scs_CN75_Ia02S_excess_mm": 4.285748608080532,
+      "scs_CN75_Ia0_excess_mm": 11.898630428842704,
+      "antecedent_7day_mm": 29.07316220534284,
+      "methods": {
+        "constant_pre_event": {
+          "stormflow_mm": 5.217474952846132,
+          "effective_background_mm": 8.919797127398395,
+          "signed_residual_mm": 5.176055811383665,
+          "clipping_correction_mm": 0.041419141462466946,
+          "native_15min_stormflow_mm": 5.2192654056471035,
+          "native_minus_30min_mm": 0.0017904528009715648,
+          "stormflow_fraction_of_window_rain": 0.13643342729360483
+        },
+        "observed_recession": {
+          "stormflow_mm": 6.94382806404924,
+          "effective_background_mm": 7.193444016195287,
+          "signed_residual_mm": 6.943001360493674,
+          "clipping_correction_mm": 0.0008267035555657998,
+          "native_15min_stormflow_mm": 6.945354459776171,
+          "native_minus_30min_mm": 0.0015263957269313622,
+          "stormflow_fraction_of_window_rain": 0.18157638893866931
+        }
+      },
+      "all_baseline_sensitivity_min_mm": 4.353092085945263,
+      "all_baseline_sensitivity_max_mm": 6.94382806404924,
+      "antecedent_rain_by_24h_age_mm": {
+        "0-24h_before_onset": 0.18154006956196342,
+        "24-48h_before_onset": 0.0,
+        "48-72h_before_onset": 0.000697809863247,
+        "72-96h_before_onset": 0.0,
+        "96-120h_before_onset": 4.550573053000537,
+        "120-144h_before_onset": 23.660938434245743,
+        "144-168h_before_onset": 0.6794128386713454
+      }
+    },
+    {
+      "event": "IETD12_E0140",
+      "window_start_utc": "2019-01-02 10:00:00+00:00",
+      "window_end_utc": "2019-01-07 17:30:00+00:00",
+      "rain_onset_utc": "2019-01-03 10:00:00+00:00",
+      "rain_window_mm": 29.923971845372385,
+      "observed_total_mm": 23.722783431748027,
+      "constant_background_m3_s": 55.5128180064,
+      "selected_recession": {
+        "event": "IETD12_E0140",
+        "start_utc": "2019-01-02 17:30:00+00:00",
+        "end_utc": "2019-01-03 01:00:00+00:00",
+        "duration_hours": 7.5,
+        "hours_before_event": 9.0,
+        "rain_mm": 0.0,
+        "daily_k": 0.8786244654421422,
+        "log_flow_R2": 0.9481809747363552,
+        "rising_step_fraction": 0.06666666666666667,
+        "eligible": true,
+        "slope_per_day": -0.12939770188899308,
+        "anchor_flow_m3_s": 56.91686164992
+      },
+      "scs_CN75_Ia02S_excess_mm": 1.728877743283607,
+      "scs_CN75_Ia0_excess_mm": 7.814286599935145,
+      "antecedent_7day_mm": 47.579966311627054,
+      "methods": {
+        "constant_pre_event": {
+          "stormflow_mm": 9.405391799725797,
+          "effective_background_mm": 14.31739163202223,
+          "signed_residual_mm": 9.401846703179874,
+          "clipping_correction_mm": 0.003545096545922277,
+          "native_15min_stormflow_mm": 9.405678272173954,
+          "native_minus_30min_mm": 0.00028647244815793727,
+          "stormflow_fraction_of_window_rain": 0.31430960596831
+        },
+        "observed_recession": {
+          "stormflow_mm": 12.211539923423615,
+          "effective_background_mm": 11.51124350832441,
+          "signed_residual_mm": 12.20980966301895,
+          "clipping_correction_mm": 0.0017302604046651737,
+          "native_15min_stormflow_mm": 12.211933715640154,
+          "native_minus_30min_mm": 0.00039379221653845775,
+          "stormflow_fraction_of_window_rain": 0.40808553044110946
+        }
+      },
+      "all_baseline_sensitivity_min_mm": 7.471487920340784,
+      "all_baseline_sensitivity_max_mm": 14.594389043395196,
+      "antecedent_rain_by_24h_age_mm": {
+        "0-24h_before_onset": 0.23939654478548944,
+        "24-48h_before_onset": 0.27035996639182724,
+        "48-72h_before_onset": 0.25528541044266934,
+        "72-96h_before_onset": 0.196410761422886,
+        "96-120h_before_onset": 4.7748507775445725,
+        "120-144h_before_onset": 39.202804338361005,
+        "144-168h_before_onset": 2.6408585126786015
+      }
+    },
+    {
+      "event": "IETD12_E0177",
+      "window_start_utc": "2019-04-24 10:00:00+00:00",
+      "window_end_utc": "2019-04-29 03:00:00+00:00",
+      "rain_onset_utc": "2019-04-25 10:00:00+00:00",
+      "rain_window_mm": 27.263968344166777,
+      "observed_total_mm": 3.295263923886661,
+      "constant_background_m3_s": 11.340897060096,
+      "selected_recession": {
+        "event": "IETD12_E0177",
+        "start_utc": "2019-04-24 15:00:00+00:00",
+        "end_utc": "2019-04-25 09:30:00+00:00",
+        "duration_hours": 18.5,
+        "hours_before_event": 0.5,
+        "rain_mm": 0.0,
+        "daily_k": 0.9248227793769831,
+        "log_flow_R2": 0.8914794298701068,
+        "rising_step_fraction": 0.1891891891891892,
+        "eligible": true,
+        "slope_per_day": -0.07815314968811514,
+        "anchor_flow_m3_s": 11.213471250432
+      },
+      "scs_CN75_Ia02S_excess_mm": 1.1241072412417357,
+      "scs_CN75_Ia0_excess_mm": 6.640934091008988,
+      "antecedent_7day_mm": 23.29323807995392,
+      "methods": {
+        "constant_pre_event": {
+          "stormflow_mm": 0.7108670564751982,
+          "effective_background_mm": 2.584396867411462,
+          "signed_residual_mm": 0.70231585389776,
+          "clipping_correction_mm": 0.008551202577438244,
+          "native_15min_stormflow_mm": 0.7100291245643437,
+          "native_minus_30min_mm": -0.0008379319108544614,
+          "stormflow_fraction_of_window_rain": 0.0260734991877032
+        },
+        "observed_recession": {
+          "stormflow_mm": 0.9816197935262068,
+          "effective_background_mm": 2.313644130360454,
+          "signed_residual_mm": 0.9796589256553568,
+          "clipping_correction_mm": 0.001960867870849925,
+          "native_15min_stormflow_mm": 0.981093673804307,
+          "native_minus_30min_mm": -0.0005261197218997538,
+          "stormflow_fraction_of_window_rain": 0.03600428892576189
+        }
+      },
+      "all_baseline_sensitivity_min_mm": 0.599329008785896,
+      "all_baseline_sensitivity_max_mm": 0.9816197935262068,
+      "antecedent_rain_by_24h_age_mm": {
+        "0-24h_before_onset": 0.0307455720485836,
+        "24-48h_before_onset": 0.3724941670031429,
+        "48-72h_before_onset": 0.0,
+        "72-96h_before_onset": 0.0,
+        "96-120h_before_onset": 0.0203739511281362,
+        "120-144h_before_onset": 10.534455713312571,
+        "144-168h_before_onset": 12.33516867646148
+      }
+    },
+    {
+      "event": "IETD12_E0400",
+      "window_start_utc": "2020-12-23 02:30:00+00:00",
+      "window_end_utc": "2020-12-27 23:00:00+00:00",
+      "rain_onset_utc": "2020-12-24 02:30:00+00:00",
+      "rain_window_mm": 65.20645008293738,
+      "observed_total_mm": 7.172009623039138,
+      "constant_background_m3_s": 12.565600675200002,
+      "selected_recession": {
+        "event": "IETD12_E0400",
+        "start_utc": "2020-12-22 05:30:00+00:00",
+        "end_utc": "2020-12-23 22:30:00+00:00",
+        "duration_hours": 41.0,
+        "hours_before_event": 4.0,
+        "rain_mm": 0.0,
+        "daily_k": 0.953380699760626,
+        "log_flow_R2": 0.8644947286339499,
+        "rising_step_fraction": 0.18292682926829268,
+        "eligible": true,
+        "slope_per_day": -0.047740980007016695,
+        "anchor_flow_m3_s": 12.572679886848
+      },
+      "scs_CN75_Ia02S_excess_mm": 17.530923673167802,
+      "scs_CN75_Ia0_excess_mm": 28.36987195990796,
+      "antecedent_7day_mm": 9.83024200452826,
+      "methods": {
+        "constant_pre_event": {
+          "stormflow_mm": 4.215843136034013,
+          "effective_background_mm": 2.9561664870051243,
+          "signed_residual_mm": 4.2100635543924785,
+          "clipping_correction_mm": 0.00577958164153447,
+          "native_15min_stormflow_mm": 4.214965814161537,
+          "native_minus_30min_mm": -0.0008773218724762444,
+          "stormflow_fraction_of_window_rain": 0.06465377475191178
+        },
+        "observed_recession": {
+          "stormflow_mm": 4.420324964297526,
+          "effective_background_mm": 2.7516846587416097,
+          "signed_residual_mm": 4.419372739576587,
+          "clipping_correction_mm": 0.0009522247209394763,
+          "native_15min_stormflow_mm": 4.419415674009549,
+          "native_minus_30min_mm": -0.0009092902879768161,
+          "stormflow_fraction_of_window_rain": 0.06778968888315845
+        }
+      },
+      "all_baseline_sensitivity_min_mm": 4.090998443127895,
+      "all_baseline_sensitivity_max_mm": 4.420324964297526,
+      "antecedent_rain_by_24h_age_mm": {
+        "0-24h_before_onset": 0.0571877889735282,
+        "24-48h_before_onset": 0.0057921715164061995,
+        "48-72h_before_onset": 0.0,
+        "72-96h_before_onset": 9.755973600563944,
+        "96-120h_before_onset": 0.0112884434743785,
+        "120-144h_before_onset": 0.0,
+        "144-168h_before_onset": 0.0
+      }
+    }
+  ],
+  "eligibility": [
+    {
+      "event": "IETD12_E0010",
+      "start_utc": "2018-02-08 13:00:00+00:00",
+      "end_utc": "2018-02-09 10:00:00+00:00",
+      "duration_hours": 21.0,
+      "hours_before_event": 29.0,
+      "rain_mm": 0.0,
+      "daily_k": 0.7227347113902062,
+      "log_flow_R2": 0.9860072477705845,
+      "rising_step_fraction": 0.047619047619047616,
+      "eligible": true,
+      "slope_per_day": -0.32471305169550385,
+      "anchor_flow_m3_s": 33.41387897856
+    },
+    {
+      "event": "IETD12_E0010",
+      "start_utc": "2018-02-09 18:30:00+00:00",
+      "end_utc": "2018-02-10 09:00:00+00:00",
+      "duration_hours": 14.5,
+      "hours_before_event": 6.0,
+      "rain_mm": 0.0,
+      "daily_k": 0.841573174907709,
+      "log_flow_R2": 0.9197087567381856,
+      "rising_step_fraction": 0.034482758620689655,
+      "eligible": true,
+      "slope_per_day": -0.17248231142812426,
+      "anchor_flow_m3_s": 26.504568410112
+    },
+    {
+      "event": "IETD12_E0015",
+      "start_utc": "2018-03-03 05:30:00+00:00",
+      "end_utc": "2018-03-05 04:30:00+00:00",
+      "duration_hours": 47.0,
+      "hours_before_event": 25.0,
+      "rain_mm": 0.0,
+      "daily_k": 0.8973254561549621,
+      "log_flow_R2": 0.9927083437521013,
+      "rising_step_fraction": 0.031914893617021274,
+      "eligible": true,
+      "slope_per_day": -0.1083366553547362,
+      "anchor_flow_m3_s": 19.39703991552
+    },
+    {
+      "event": "IETD12_E0015",
+      "start_utc": "2018-03-05 15:30:00+00:00",
+      "end_utc": "2018-03-06 04:00:00+00:00",
+      "duration_hours": 12.5,
+      "hours_before_event": 1.5,
+      "rain_mm": 0.0,
+      "daily_k": 0.9307844170164541,
+      "log_flow_R2": 0.8899968805944781,
+      "rising_step_fraction": 0.12,
+      "eligible": true,
+      "slope_per_day": -0.07172758918914066,
+      "anchor_flow_m3_s": 18.179415512064
+    },
+    {
+      "event": "IETD12_E0136",
+      "start_utc": "2018-12-16 22:00:00+00:00",
+      "end_utc": "2018-12-17 09:00:00+00:00",
+      "duration_hours": 11.0,
+      "hours_before_event": 61.0,
+      "rain_mm": 0.0,
+      "daily_k": 0.9102836911500769,
+      "log_flow_R2": 0.9797522432053977,
+      "rising_step_fraction": 0.0,
+      "eligible": true,
+      "slope_per_day": -0.09399897953814508,
+      "anchor_flow_m3_s": 42.475269888
+    },
+    {
+      "event": "IETD12_E0136",
+      "start_utc": "2018-12-17 09:30:00+00:00",
+      "end_utc": "2018-12-19 04:00:00+00:00",
+      "duration_hours": 42.5,
+      "hours_before_event": 18.0,
+      "rain_mm": 0.0,
+      "daily_k": 0.9015873581815302,
+      "log_flow_R2": 0.9763777229425747,
+      "rising_step_fraction": 0.023529411764705882,
+      "eligible": true,
+      "slope_per_day": -0.10359833789266128,
+      "anchor_flow_m3_s": 35.11288977408
+    },
+    {
+      "event": "IETD12_E0136",
+      "start_utc": "2018-12-19 11:30:00+00:00",
+      "end_utc": "2018-12-19 19:30:00+00:00",
+      "duration_hours": 8.0,
+      "hours_before_event": 2.5,
+      "rain_mm": 0.0,
+      "daily_k": 0.8868651556813774,
+      "log_flow_R2": 0.9583939475219222,
+      "rising_step_fraction": 0.0,
+      "eligible": true,
+      "slope_per_day": -0.1200623311363391,
+      "anchor_flow_m3_s": 32.28120511488
+    },
+    {
+      "event": "IETD12_E0140",
+      "start_utc": "2019-01-01 01:30:00+00:00",
+      "end_utc": "2019-01-01 12:30:00+00:00",
+      "duration_hours": 11.0,
+      "hours_before_event": 45.5,
+      "rain_mm": 0.0,
+      "daily_k": 0.959786629345998,
+      "log_flow_R2": 0.6468653614248755,
+      "rising_step_fraction": 0.13636363636363635,
+      "eligible": false,
+      "slope_per_day": -0.04104428032183222,
+      "anchor_flow_m3_s": 57.48319858176
+    },
+    {
+      "event": "IETD12_E0140",
+      "start_utc": "2019-01-01 14:00:00+00:00",
+      "end_utc": "2019-01-01 20:30:00+00:00",
+      "duration_hours": 6.5,
+      "hours_before_event": 37.5,
+      "rain_mm": 0.0,
+      "daily_k": 2.687177379192648,
+      "log_flow_R2": 0.9500234886651474,
+      "rising_step_fraction": 0.8461538461538461,
+      "eligible": false,
+      "slope_per_day": 0.9884913412962365,
+      "anchor_flow_m3_s": 72.49112727552
+    },
+    {
+      "event": "IETD12_E0140",
+      "start_utc": "2019-01-02 08:00:00+00:00",
+      "end_utc": "2019-01-02 16:30:00+00:00",
+      "duration_hours": 8.5,
+      "hours_before_event": 17.5,
+      "rain_mm": 0.0,
+      "daily_k": 0.7768617200294581,
+      "log_flow_R2": 0.9844513873659957,
+      "rising_step_fraction": 0.0,
+      "eligible": true,
+      "slope_per_day": -0.2524929109524603,
+      "anchor_flow_m3_s": 60.03171477504
+    },
+    {
+      "event": "IETD12_E0140",
+      "start_utc": "2019-01-02 17:30:00+00:00",
+      "end_utc": "2019-01-03 01:00:00+00:00",
+      "duration_hours": 7.5,
+      "hours_before_event": 9.0,
+      "rain_mm": 0.0,
+      "daily_k": 0.8786244654421422,
+      "log_flow_R2": 0.9481809747363552,
+      "rising_step_fraction": 0.06666666666666667,
+      "eligible": true,
+      "slope_per_day": -0.12939770188899308,
+      "anchor_flow_m3_s": 56.91686164992
+    },
+    {
+      "event": "IETD12_E0177",
+      "start_utc": "2019-04-22 10:00:00+00:00",
+      "end_utc": "2019-04-23 17:30:00+00:00",
+      "duration_hours": 31.5,
+      "eligible": false,
+      "reason": "incomplete observed discharge",
+      "missing_half_hour_values": 2
+    },
+    {
+      "event": "IETD12_E0177",
+      "start_utc": "2019-04-24 15:00:00+00:00",
+      "end_utc": "2019-04-25 09:30:00+00:00",
+      "duration_hours": 18.5,
+      "hours_before_event": 0.5,
+      "rain_mm": 0.0,
+      "daily_k": 0.9248227793769831,
+      "log_flow_R2": 0.8914794298701068,
+      "rising_step_fraction": 0.1891891891891892,
+      "eligible": true,
+      "slope_per_day": -0.07815314968811514,
+      "anchor_flow_m3_s": 11.213471250432
+    },
+    {
+      "event": "IETD12_E0400",
+      "start_utc": "2020-12-21 02:30:00+00:00",
+      "end_utc": "2020-12-22 04:30:00+00:00",
+      "duration_hours": 26.0,
+      "hours_before_event": 46.0,
+      "rain_mm": 0.0,
+      "daily_k": 1.0613533645273374,
+      "log_flow_R2": 0.8773670532043788,
+      "rising_step_fraction": 0.23076923076923078,
+      "eligible": false,
+      "slope_per_day": 0.059544852748363596,
+      "anchor_flow_m3_s": 13.4505021312
+    },
+    {
+      "event": "IETD12_E0400",
+      "start_utc": "2020-12-22 05:30:00+00:00",
+      "end_utc": "2020-12-23 22:30:00+00:00",
+      "duration_hours": 41.0,
+      "hours_before_event": 4.0,
+      "rain_mm": 0.0,
+      "daily_k": 0.953380699760626,
+      "log_flow_R2": 0.8644947286339499,
+      "rising_step_fraction": 0.18292682926829268,
+      "eligible": true,
+      "slope_per_day": -0.047740980007016695,
+      "anchor_flow_m3_s": 12.572679886848
+    }
+  ],
+  "sensitivity": [
+    {
+      "event": "IETD12_E0010",
+      "method": "constant",
+      "choice": "preceding_3h_mean",
+      "stormflow_mm": 29.345277906337056
+    },
+    {
+      "event": "IETD12_E0010",
+      "method": "constant",
+      "choice": "preceding_6h_mean",
+      "stormflow_mm": 29.29069058134105
+    },
+    {
+      "event": "IETD12_E0010",
+      "method": "constant",
+      "choice": "preceding_12h_mean",
+      "stormflow_mm": 29.227165315962587
+    },
+    {
+      "event": "IETD12_E0010",
+      "method": "constant",
+      "choice": "control_start_flow_conservative_sensitivity",
+      "stormflow_mm": 28.358767060246734
+    },
+    {
+      "event": "IETD12_E0010",
+      "method": "recession",
+      "choice": "2018-02-08 13:00:00+00:00 to 2018-02-09 10:00:00+00:00",
+      "stormflow_mm": 32.658969819391
+    },
+    {
+      "event": "IETD12_E0010",
+      "method": "recession",
+      "choice": "2018-02-09 18:30:00+00:00 to 2018-02-10 09:00:00+00:00",
+      "stormflow_mm": 31.258587446679023
+    },
+    {
+      "event": "IETD12_E0015",
+      "method": "constant",
+      "choice": "preceding_3h_mean",
+      "stormflow_mm": 2.1633253394902594
+    },
+    {
+      "event": "IETD12_E0015",
+      "method": "constant",
+      "choice": "preceding_6h_mean",
+      "stormflow_mm": 2.148063519814781
+    },
+    {
+      "event": "IETD12_E0015",
+      "method": "constant",
+      "choice": "preceding_12h_mean",
+      "stormflow_mm": 2.111535298586967
+    },
+    {
+      "event": "IETD12_E0015",
+      "method": "constant",
+      "choice": "control_start_flow_conservative_sensitivity",
+      "stormflow_mm": 1.9649431691426507
+    },
+    {
+      "event": "IETD12_E0015",
+      "method": "recession",
+      "choice": "2018-03-03 05:30:00+00:00 to 2018-03-05 04:30:00+00:00",
+      "stormflow_mm": 2.831670590563038
+    },
+    {
+      "event": "IETD12_E0015",
+      "method": "recession",
+      "choice": "2018-03-05 15:30:00+00:00 to 2018-03-06 04:00:00+00:00",
+      "stormflow_mm": 2.5333948321228577
+    },
+    {
+      "event": "IETD12_E0136",
+      "method": "constant",
+      "choice": "preceding_3h_mean",
+      "stormflow_mm": 5.279830455727955
+    },
+    {
+      "event": "IETD12_E0136",
+      "method": "constant",
+      "choice": "preceding_6h_mean",
+      "stormflow_mm": 5.217474952846132
+    },
+    {
+      "event": "IETD12_E0136",
+      "method": "constant",
+      "choice": "preceding_12h_mean",
+      "stormflow_mm": 5.106586242705981
+    },
+    {
+      "event": "IETD12_E0136",
+      "method": "constant",
+      "choice": "control_start_flow_conservative_sensitivity",
+      "stormflow_mm": 4.353092085945263
+    },
+    {
+      "event": "IETD12_E0136",
+      "method": "recession",
+      "choice": "2018-12-16 22:00:00+00:00 to 2018-12-17 09:00:00+00:00",
+      "stormflow_mm": 6.3674301012256285
+    },
+    {
+      "event": "IETD12_E0136",
+      "method": "recession",
+      "choice": "2018-12-17 09:30:00+00:00 to 2018-12-19 04:00:00+00:00",
+      "stormflow_mm": 6.642295013786343
+    },
+    {
+      "event": "IETD12_E0136",
+      "method": "recession",
+      "choice": "2018-12-19 11:30:00+00:00 to 2018-12-19 19:30:00+00:00",
+      "stormflow_mm": 6.94382806404924
+    },
+    {
+      "event": "IETD12_E0140",
+      "method": "constant",
+      "choice": "preceding_3h_mean",
+      "stormflow_mm": 9.51546883792951
+    },
+    {
+      "event": "IETD12_E0140",
+      "method": "constant",
+      "choice": "preceding_6h_mean",
+      "stormflow_mm": 9.405391799725797
+    },
+    {
+      "event": "IETD12_E0140",
+      "method": "constant",
+      "choice": "preceding_12h_mean",
+      "stormflow_mm": 9.217119719527673
+    },
+    {
+      "event": "IETD12_E0140",
+      "method": "constant",
+      "choice": "control_start_flow_conservative_sensitivity",
+      "stormflow_mm": 7.471487920340784
+    },
+    {
+      "event": "IETD12_E0140",
+      "method": "recession",
+      "choice": "2019-01-02 08:00:00+00:00 to 2019-01-02 16:30:00+00:00",
+      "stormflow_mm": 14.594389043395196
+    },
+    {
+      "event": "IETD12_E0140",
+      "method": "recession",
+      "choice": "2019-01-02 17:30:00+00:00 to 2019-01-03 01:00:00+00:00",
+      "stormflow_mm": 12.211539923423615
+    },
+    {
+      "event": "IETD12_E0177",
+      "method": "constant",
+      "choice": "preceding_3h_mean",
+      "stormflow_mm": 0.7153121539624089
+    },
+    {
+      "event": "IETD12_E0177",
+      "method": "constant",
+      "choice": "preceding_6h_mean",
+      "stormflow_mm": 0.7108670564751982
+    },
+    {
+      "event": "IETD12_E0177",
+      "method": "constant",
+      "choice": "preceding_12h_mean",
+      "stormflow_mm": 0.7013609457372415
+    },
+    {
+      "event": "IETD12_E0177",
+      "method": "constant",
+      "choice": "control_start_flow_conservative_sensitivity",
+      "stormflow_mm": 0.599329008785896
+    },
+    {
+      "event": "IETD12_E0177",
+      "method": "recession",
+      "choice": "2019-04-24 15:00:00+00:00 to 2019-04-25 09:30:00+00:00",
+      "stormflow_mm": 0.9816197935262068
+    },
+    {
+      "event": "IETD12_E0400",
+      "method": "constant",
+      "choice": "preceding_3h_mean",
+      "stormflow_mm": 4.226270733146871
+    },
+    {
+      "event": "IETD12_E0400",
+      "method": "constant",
+      "choice": "preceding_6h_mean",
+      "stormflow_mm": 4.215843136034013
+    },
+    {
+      "event": "IETD12_E0400",
+      "method": "constant",
+      "choice": "preceding_12h_mean",
+      "stormflow_mm": 4.184467241149794
+    },
+    {
+      "event": "IETD12_E0400",
+      "method": "constant",
+      "choice": "control_start_flow_conservative_sensitivity",
+      "stormflow_mm": 4.090998443127895
+    },
+    {
+      "event": "IETD12_E0400",
+      "method": "recession",
+      "choice": "2020-12-22 05:30:00+00:00 to 2020-12-23 22:30:00+00:00",
+      "stormflow_mm": 4.420324964297526
+    }
+  ]
+}

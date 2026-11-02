@@ -1,0 +1,11 @@
+requests
+PyYAML
+pandas
+numpy
+geopandas
+shapely
+pyproj
+matplotlib
+earthengine-api
+rasterio
+whitebox

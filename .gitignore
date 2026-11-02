@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.key
+*.pem
+*.access
+data/raw/
+data/interim/
+*.zip

@@ -1,0 +1,54 @@
+{
+  "status": "FROZEN_BEFORE_FIRST_RUN",
+  "date": "2026-11-02",
+  "authorization": "User requested the uncalibrated IMERG comparison to complete the original proposed study.",
+  "design": "Paired forcing sensitivity on existing six calibration and four now-seen evaluation events; not fresh independent validation.",
+  "events": [
+    "IETD12_E0010",
+    "IETD12_E0015",
+    "IETD12_E0136",
+    "IETD12_E0140",
+    "IETD12_E0177",
+    "IETD12_E0400",
+    "IETD12_E0659",
+    "IETD12_E0660",
+    "IETD12_E0679",
+    "IETD12_E0784"
+  ],
+  "calibration_events": [
+    "IETD12_E0010",
+    "IETD12_E0015",
+    "IETD12_E0136",
+    "IETD12_E0140",
+    "IETD12_E0177",
+    "IETD12_E0400"
+  ],
+  "previous_evaluation_events": [
+    "IETD12_E0659",
+    "IETD12_E0660",
+    "IETD12_E0679",
+    "IETD12_E0784"
+  ],
+  "maximum_new_runs": 10,
+  "fixed_parameters": {
+    "CN": 68.0,
+    "Tc_hours": 18.0,
+    "R_hours": 70.0,
+    "k": 0.99,
+    "Ia_mm": 23.91
+  },
+  "fitted_parameters": [],
+  "source_column": "precipitation_uncal_mm_30min",
+  "reference_column": "precipitation_mm_30min",
+  "clock": "Identical UTC windows and half-hour grid. Advance source rainfall start labels 30 minutes to interval ends.",
+  "identical_controls": "Same basin methods, parameters, Q0, area, discharge observations, control windows and timestep. Only forcing band changes.",
+  "metrics": "NSE, HMS modified KGE, trapezoidal total volume bias, HMS sampled-flow bias, peak error, signed peak timing, RMSE; exact observations and earliest tied peaks.",
+  "comparison": "Report uncalibrated minus calibrated NSE/KGE and signed biases; compare absolute volume/peak/timing errors. Separate six-event and four-event arithmetic summaries, plus original three-group overlap sensitivity summary for the four events. No pooled volumes or pooled scores.",
+  "restrictions": "No tuning, forcing scaling, event reselection, window changes, selecting a new final model, inference of independent precipitation accuracy or renewed holdout claims.",
+  "stopping": "One new uncalibrated run per event, maximum ten. Stop on unexplained error or failed independent input/output reconciliation; no automatic retries. Known auxiliary .out WARNING10168 may be disclosed if numerical checks pass.",
+  "baseline_status": "Original calibrated C072 baseline and prior calibration/validation decisions remain unchanged.",
+  "reference_hashes": {
+    "D:\\project_02_satellite-rainfall-runoff\\outputs\\calibration_batch_execution_20261101\\search_result.json": "81e2d18ac88a4613d65ed949ca7cae9882a87bdafdb373bde70ecdde166b18a7",
+    "D:\\project_02_satellite-rainfall-runoff\\outputs\\C072_validation_execution_20261102\\validation_result.json": "dfe1dde6dce31f11a47d8494dc1f79cf9838a3694282ae9aeb05641b6e3579dd"
+  }
+}

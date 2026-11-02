@@ -1,0 +1,5 @@
+group,forcing,mean_NSE,mean_modified_KGE,mean_absolute_volume_bias_percent,mean_absolute_peak_error_percent,mean_absolute_timing_error_hours
+calibration_summary,calibrated,-0.4792050666666667,0.25265825000000003,28.27162527044843,45.623639815093505,14.583333333333334
+calibration_summary,uncalibrated,-1.3700892500000001,-0.14848108333333335,39.1444704921844,58.96218299296623,24.5
+previous_evaluation_summary,calibrated,-0.21977485,-0.030234574999999986,26.683161272199655,44.00900286546783,29.25
+previous_evaluation_summary,uncalibrated,-0.675604175,-0.12635145,36.20982418331175,56.652496175321176,20.625
