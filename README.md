@@ -7,6 +7,17 @@ automated HEC-HMS calibration, held-out evaluation and rainfall-forcing sensitiv
 **The model did not meet the project performance criteria.** This repository
 documents that result transparently; it is not an operational flood forecasting model.
 
+## Reusable dashboard for your own basin
+
+[Open the dashboard source and instructions](dashboard/README.md). Runoff Lab is a
+standalone, browser-local workspace for any watershed: configure a study, register
+datasets, set event criteria, manage evidence and track HEC-HMS readiness. It starts
+empty and does not bundle this case study’s measurements, figures or local paths.
+Each visitor’s records stay in their own browser and can be exported as JSON.
+
+From the repository root, run `python -m http.server 8080` and open
+http://localhost:8080/dashboard/. No build or dependency installation is required.
+
 ## Main results
 
 | Experiment | Calibrated IMERG mean NSE | Uncalibrated IMERG mean NSE |
