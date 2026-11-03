@@ -1,5 +1,24 @@
 # Satellite rainfall–runoff modelling with HEC-HMS
 
+## Live dashboard
+
+[**Open the live Runoff Lab dashboard**](https://mohsin-oss.github.io/satellite-hydrology-hec-hms/dashboard/)
+
+The interactive dashboard is hosted on **GitHub Pages** and runs directly in your
+browser, with no installation required. It opens with this Choctawhatchee River
+project as a read-only demo, showing datasets, selected events, figures, evidence
+and the documented model limitations.
+
+Users can choose **Make an editable copy** to adapt the demo or **Start a blank
+project** to build their own study. Each project supports a custom basin, station,
+study period, datasets, event-linkage criteria, selected events, scripts, outputs,
+figures, reports, evidence records and HEC-HMS readiness checks.
+
+Personal projects are saved in the visitor’s browser and can be exported or imported
+as JSON backups. They are not uploaded to this repository or shared with other
+visitors. [Dashboard instructions](dashboard/README.md).
+
+
 **Choctawhatchee River near Newton, Alabama — USGS 02361000**
 
 A completed research case study of GPM IMERG Final V07 rainfall, USGS discharge,
