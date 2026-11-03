@@ -11,8 +11,11 @@ documents that result transparently; it is not an operational flood forecasting 
 
 [Open the dashboard source and instructions](dashboard/README.md). Runoff Lab is a
 standalone, browser-local workspace for any watershed: configure a study, register
-datasets, set event criteria, manage evidence and track HEC-HMS readiness. It starts
-empty and does not bundle this case study’s measurements, figures or local paths.
+datasets, set event criteria, manage evidence and track HEC-HMS readiness. It opens with a read-only demo of this case study, including dataset summaries,
+ten selected events, source-linked evidence, published figures and limitations.
+Users can make an editable copy or start a blank project for their own basin.
+Copies reset review statuses and model-readiness checks; no local filesystem paths
+or credentials are included.
 Each visitor’s records stay in their own browser and can be exported as JSON.
 
 From the repository root, run `python -m http.server 8080` and open
