@@ -10,7 +10,7 @@ Open `index.html` in a browser, or serve this folder using Python 3:
 python -m http.server 8080
 ```
 
-Open http://localhost:8080. No build step, dependency install, account or backend is required. For consistent browser storage, use a fixed HTTP origin instead of opening the file directly.
+Open https://mohsin-oss.github.io/satellite-hydrology-hec-hms/dashboard/ http://localhost:8080. No build step, dependency install, account or backend is required. For consistent browser storage, use a fixed HTTP origin instead of opening the file directly.
 
 1. Explore the read-only demo, then choose **Make an editable copy** or **Start a blank project**. Enter the basin, provider, station, time zone, study period and units.
 2. Register datasets with product versions, cadence, QA status and source references.
