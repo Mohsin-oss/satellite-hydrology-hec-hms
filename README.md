@@ -1,44 +1,31 @@
 # Satellite rainfall–runoff modelling with HEC-HMS
 
-## Live dashboard
-
-[**Open the live Runoff Lab dashboard**](https://mohsin-oss.github.io/satellite-hydrology-hec-hms/dashboard/)
-
-The interactive dashboard is hosted on **GitHub Pages** and runs directly in your
-browser, with no installation required. It opens with this Choctawhatchee River
-project as a read-only demo, showing datasets, selected events, figures, evidence
-and the documented model limitations.
-
-Users can choose **Make an editable copy** to adapt the demo or **Start a blank
-project** to build their own study. Each project supports a custom basin, station,
-study period, datasets, event-linkage criteria, selected events, scripts, outputs,
-figures, reports, evidence records and HEC-HMS readiness checks.
-
-Personal projects are saved in the visitor’s browser and can be exported or imported
-as JSON backups. They are not uploaded to this repository or shared with other
-visitors. [Dashboard instructions](dashboard/README.md).
-
-
 **Choctawhatchee River near Newton, Alabama — USGS 02361000**
+
+[**Open the live Runoff Lab dashboard →**](https://mohsin-oss.github.io/satellite-hydrology-hec-hms/dashboard/) · [Dashboard guide](dashboard/README.md)
 
 A completed research case study of GPM IMERG Final V07 rainfall, USGS discharge,
 automated HEC-HMS calibration, held-out evaluation and rainfall-forcing sensitivity.
 **The model did not meet the project performance criteria.** This repository
 documents that result transparently; it is not an operational flood forecasting model.
 
-## Reusable dashboard for your own basin
+## Interactive dashboard
 
-[Open the dashboard source and instructions](dashboard/README.md). Runoff Lab is a
-standalone, browser-local workspace for any watershed: configure a study, register
-datasets, set event criteria, manage evidence and track HEC-HMS readiness. It opens with a read-only demo of this case study, including dataset summaries,
-ten selected events, source-linked evidence, published figures and limitations.
-Users can make an editable copy or start a blank project for their own basin.
-Copies reset review statuses and model-readiness checks; no local filesystem paths
-or credentials are included.
-Each visitor’s records stay in their own browser and can be exported as JSON.
+Runoff Lab is an interactive research workspace hosted on **GitHub Pages**.
+It runs in your browser without installation and presents this project as a
+read-only demo, including datasets, selected events, figures, evidence and model
+limitations.
 
-From the repository root, run `python -m http.server 8080` and open
-http://localhost:8080/dashboard/. No build or dependency installation is required.
+Choose **Make an editable copy** to adapt the demo or **Start a blank project**
+for another study area. Users can configure their own basin, station, datasets,
+event criteria, evidence records and HEC-HMS readiness checks. Copied projects
+reset review statuses and readiness checks so the demo's findings are not
+treated as verification for a new study.
+
+Personal projects stay in each visitor's browser and support JSON export/import
+for backups. They are not uploaded to this repository or shared with other
+visitors. Setup and local-running instructions are in the dashboard guide linked
+above.
 
 ## Main results
 
@@ -60,7 +47,7 @@ squared-error performance was worse than using that event's observed mean flow.
 Substituting uncalibrated IMERG improved NSE in two events, tied one and worsened
 seven. It did not rescue the baseline or establish either product's rainfall accuracy.
 
-## Why performance was poor
+## Performance diagnosis
 
 The evidence shows inconsistent runoff-volume response across events: C072
 overproduced direct runoff in E0010 and E0400 and underproduced it in the other
@@ -72,7 +59,7 @@ earlier-event carryover and delayed flow, event-dependent rainfall errors, and t
 single-subbasin model structure. **These are hypotheses, not identified causes.**
 No independent rainfall reference was used. See [failure analysis](docs/WHY_PERFORMANCE_WAS_POOR.md).
 
-## How this could be improved
+## Future work
 
 1. Benchmark event rainfall against independent gauges or radar before more tuning.
 2. Audit antecedent wetness, earlier storms and initial flow; test a physically
@@ -83,7 +70,7 @@ No independent rainfall reference was used. See [failure analysis](docs/WHY_PERF
 See the required, prioritized [improvement plan](docs/IMPROVEMENTS.md) for evidence,
 tests and decision rules. More blind calibration is not the recommended next step.
 
-## Read and reproduce
+## Reports and reproducibility
 
 - [Final report (PDF)](report/Project_02_Final_Report.pdf) and [Markdown](report/Project_02_Final_Report.md).
 - [Ten-event baseline metrics](tables/ten_event_metrics.csv).
@@ -95,7 +82,7 @@ tests and decision rules. More blind calibration is not the recommended next ste
 
 ![Forcing comparison](figures/forcing_comparison_summary.png)
 
-## Important boundaries
+## Scope and limitations
 
 All model clocks use UTC and 30-minute intervals. Rainfall start labels were
 shifted to interval ends; observed flow was sampled without interpolation.
